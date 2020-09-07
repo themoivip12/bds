@@ -1,0 +1,27 @@
+.btn-tab{
+    position: relative;
+    @include media-breakpoint-up(md){
+    width: 25%;
+    }
+    @include media-breakpoint-between(sm,md){
+        width: 33%;
+        }
+        @include media-breakpoint-down(sm){
+    width: 100%;}
+    .fa-sort-down{
+        color: $navy !important;
+        position: absolute;
+        bottom: -20%;
+        font-size: $h4-font-size;
+        right: 50%;
+        transform: translate(50%,10%);
+        opacity: 0;
+    }
+    
+}
+
+ .active{
+    .fa-sort-down{
+        opacity: 1;
+    }
+}
